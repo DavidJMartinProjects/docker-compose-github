@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+     
+  exchange-rate-service:
+    build: https://github.com/DavidJMartinProjects/microservice_ecosystem_exchange_service.git#master
+    ports:
+     - "8082:8080"
+
+  top-news-service:
+    build: https://github.com/DavidJMartinProjects/microservice_ecosystem_top_news_articles_service.git#master
+    ports:
+     - "8081:8080"
+
+      
+      
